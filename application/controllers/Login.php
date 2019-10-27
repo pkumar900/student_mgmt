@@ -20,7 +20,7 @@ class Login extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('login/login');
+		$this->load->view('panel/login');
 	}
 
 	public function checklogin()
@@ -45,7 +45,7 @@ class Login extends CI_Controller {
 		else
 		{
 			$data['msg']='<span><strong style="color:red">Inavalid Credentials</strong></span>';
-			$this->load->view('login/login',$data);
+			$this->load->view('panel/login',$data);
 		}
 	}
 
